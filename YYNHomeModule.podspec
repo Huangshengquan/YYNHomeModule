@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/1195759262@qq.com/YYNHomeModule'
+  s.homepage         = 'https://github.com/Huangshengquan/YYNHomeModule.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1195759262@qq.com' => '1195759262@qq.com' }
-  s.source           = { :git => 'https://github.com/1195759262@qq.com/YYNHomeModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Huangshengquan/YYNHomeModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -33,10 +33,18 @@ TODO: Add long description of the pod here.
   s.source_files = 'YYNHomeModule/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'YYNHomeModule' => ['YYNHomeModule/Assets/*.png']
+  #   'YYNHomeModule' => ['YYNHomeModule/Assets/*']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'AFNetworking'
+  s.dependency 'Masonry'
+  s.dependency 'MBProgressHUD'
+  s.prefix_header_contents = '#import "Masonry.h"','#import "UIKit+AFNetworking.h"', '#import "MBProgressHUD.h"'
+  
+  
+  
 end

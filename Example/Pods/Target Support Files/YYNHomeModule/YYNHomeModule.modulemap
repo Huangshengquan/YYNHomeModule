@@ -1,0 +1,6 @@
+framework module YYNHomeModule {
+  umbrella header "YYNHomeModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
